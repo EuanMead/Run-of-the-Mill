@@ -71,7 +71,7 @@ textarea {
 
 ::-moz-selection { background: #fe57a1; color: #fff; text-shadow: none; }
 ::selection { background: #fe57a1; color: #fff; text-shadow: none; }
-* {-webkit-tap-highlight-color: #fe57a1;}
+body {-webkit-tap-highlight-color: #fe57a1;}
 
 a[href] {
 	color: #00e;
@@ -87,8 +87,6 @@ a[href]:focus {
 	outline: 0;
 }
 
-abbr {_border-bottom: expression(this.title ? '1px dotted' : 'none');}
-
 abbr[title] { border-bottom: 1px dotted; }
 
 b, strong { font-weight: bold; }
@@ -97,7 +95,7 @@ blockquote { margin: 1em 40px; }
 
 dfn { font-style: italic; }
 
-hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
+hr { display: block; height: 1px; background:transparent; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
 
 ins { background: #f9fda2; color: #000; text-decoration: none; }
 
@@ -150,7 +148,6 @@ button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
 
 textarea { overflow: auto; vertical-align: top; resize: vertical; }
 
-input:valid, textarea:valid { }
 input:invalid, textarea:invalid { background-color: #f0dddd; }
 
 table { border-collapse: collapse; border-spacing: 0; }
