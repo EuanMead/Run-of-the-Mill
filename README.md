@@ -17,3 +17,5 @@ The structure is in essence a light-weight version of HTML5 Boilerplate. The mai
 ### Folder Structure
 
 There are js, css and img folders. The img and the js folder are empty however the css folder contains the main stylesheet (style.css).
+
+#### Thanks, Euan
