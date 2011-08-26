@@ -14,6 +14,10 @@ section {
 	overflow: hidden;
 	*zoom:1;
 }
+/* div included for clearfix hack */
+/* all element above clear for use as containers of floating elements */
+/* width:100%;overflow:hidden; is the hack for the majority of browsers */
+/* IE6 takes *zoom:1; to trigger hasLayout */
 
 textarea,
 input,
@@ -21,11 +25,13 @@ select,
 button {
 	outline:none;
 }
+/* remove outline */
 
 audio,
 canvas,
 video {
 	display: inline-block;
+	display: -moz-inline-stack;
 	*display: inline;
 	*zoom: 1;
 }
@@ -33,6 +39,7 @@ video {
 audio:not([controls]) {
 	display: none;
 }
+
 audio:focus,audio:active {
 	outline:0;
 }
@@ -44,7 +51,7 @@ audio:focus,audio:active {
 html {
 	font-size: 100%;
 	overflow-y: scroll;
-	-webkit-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%; 
 	-ms-text-size-adjust: 100%;
 	height:100%;
 }
@@ -54,7 +61,6 @@ body {
 	color:#292929;
 	font-size:13px;
 	line-height:1.231;
-	margin-bottom:100px;
 	min-height:100%;
 }
 
