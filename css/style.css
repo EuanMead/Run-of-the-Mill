@@ -62,6 +62,9 @@ input,
 select,
 textarea {
     font-family: sans-serif;
+		text-rendering:optimizeLegibility;
+		-webkit-font-smoothing: subpixel-antialiased;
+		filter:none;
 }
 
 ::-moz-selection { background: #fe57a1; color: #fff; text-shadow: none; }
