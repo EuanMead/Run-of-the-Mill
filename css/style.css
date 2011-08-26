@@ -146,9 +146,12 @@ input[type="search"]::-webkit-search-decoration { -webkit-appearance: none; }
 
 button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
 
-textarea { overflow: auto; vertical-align: top; resize: vertical; }
+textarea { overflow: auto; vertical-align: top; max-width:100%; }
 
-input:invalid, textarea:invalid { background-color: #f0dddd; }
+input[type="text"],input[type="email"],input[type="tel"],input[type="url"] textarea {background:white; border:1px solid rgba(0,0,0,0.33);_border:1px solid #aaa; padding:4px;}
+
+:invalid {box-shadow:0 0 0 0 transparent;}
+:focus:invalid {box-shadow: 0 0 1.5px 1px rgb(255,30,30)}
 
 table { border-collapse: collapse; border-spacing: 0; }
 td { vertical-align: top; }
