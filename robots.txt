@@ -1,5 +1,15 @@
-# www.robotstxt.org/
-# www.google.com/support/webmasters/bin/answer.py?hl=en&answer=156449
+## Structure
+## User-agent: robot
+## Disallow: files or directories
 
-User-agent: *
+## Specific
+## User-agent: Googlebot
+## Disallow: /no-robots/
 
+## Allow all
+## User-agent: *
+## Disallow:
+
+## Allow none
+## User-agent: *
+## Disallow: /
